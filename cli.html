@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
+    <title>Vimal | Portafolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link rel="icon" type="image/png" href="assets/images/png.png">
+    <script defer src="js/commands.js"></script>
+    <script defer src="js/inputRenderer.js"></script>
+    <script defer type="module" src="js/commandParser.js"></script>
+
+    <audio autoplay loop style="display: none;">
+      <source src="assets\audio\coc.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      // Get reference to the audio element
+      const audio = document.querySelector("audio");
+    
+      // Set the volume to a lower value (0.5)
+      audio.volume =  0.5;
+    </script>
+  </head>
+
+
+  <body>
+    <div id="terminal">
+      <a id="contentHook"></a>
+    </div>
+    <div id="command" onclick="focusOnTextArea()">
+      <textarea
+        type="text"
+        id="texter"
+        onkeydown="moveCursor(this.value.length, event)"
+        autofocus
+      ></textarea>
+      <div id="liner">
+        <span id="typer"></span><b class="cursor" id="cursor">█</b>
+        <span id="mobileInput"><input type="text" autocapitalize="none" autocorrect="off" spellcheck="false" autocomplete="off" inputmode="text" ></span>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a dedicated B.Sc. Computer Science student with a burgeoning passion for IT and Data Science. With a strong foundation in programming and hands-on experience in various projects and certifications, I am committed to continuous learning and growth in the dynamic field of technology."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Mari's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a dedicated B.Sc. Computer Science student with a burgeoning passion for IT and Data Science. With a strong foundation in programming and hands-on experience in various projects and certifications, I am committed to continuous learning and growth in the dynamic field of technology.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mari's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a dedicated B.Sc. Computer Science student with a burgeoning passion for Cloud Technology and Information Security. With a strong foundation in programming and hands-on experience in various projects and certifications, I am committed to continuous learning and growth in the dynamic field of technology.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vimal's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a dedicated B.Sc. Computer Science student with a burgeoning passion for IT and Data Science. With a strong foundation in programming and hands-on experience in various projects and certifications, I am committed to continuous learning and growth in the dynamic field of technology.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Mari's Portfolio</title>
+    <audio autoplay loop style="display: none;">
+      <source src="assets\audio\ogg.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+      // Get reference to the audio element
+      const audio = document.querySelector("audio");
+    
+      // Set the volume to a lower value (0.5)
+      audio.volume = 0.1;
+    </script>
+    
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#blog">See Blog</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Ping me</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Marimuthu Dharmalingam</span>
+            <span>Data Science Enthusiast💻</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+          I am a dedicated B.Sc. Computer Science student with a burgeoning passion for IT and Data Science.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Ping me</a>
+            <a href="cli.html" class="btn btn-secondary">👨‍💻CLI</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Certification & Badges</h2>
+          <div class="logos">
+            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/git.svg"
+                alt="Ideacraft"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/cisco.svg"
+                alt="Golden grid"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/arcx1.svg"
+                alt="Theia"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/oracle.svg"
+                alt="General motors"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/vmware.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/csi.svg"
+                alt="Shopify"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/ebox1.svg"
+                alt="Agency elevation"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/ATTACK.svg"
+                alt="Ron jones"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/rap.svg"
+                alt="Mighty furniture's"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/ini.svg"
+                alt="Bulls eye"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/iit.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/soon.svg"
+                alt="Fastlane"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work"> My Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Vidlock Development Project</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Integrated video processing algorithms and secure locking mechanisms.
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>Tkinter</li>
+                  <li>VLC</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://github.com/M-Aadhi/VIdLock" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/M-Aadhi/VIdLock"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/M-Aadhi"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/medium.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/new.png"
+                  alt="agency elevation"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Ethiguard Browser Extension Development Project</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">Implemented tracking pixel detection and dark pattern analysis algorithms.</p>
+                <ol class="work-technologies">
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                 
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/M-Aadhi/Ethiguard"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                  
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/tier.jpg"
+                  alt="portfolio template"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Wanna Exit Immersive Maze Game Development Project</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  First-person maze game using Unity, featuring dynamic environments, challenging puzzles, and relentless robotic adversaries.
+                </p>
+                <ol class="work-technologies">
+                  <li>Unit Engine</li>
+                  <li>C#</li>
+                  
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://github.com/M-Aadhi/Wanna-Exit" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  > 
+
+                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/M-Aadhi/Wanna-Exit"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                  
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/final.png"
+                  alt="portfolio template"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+      
+
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Skills and Tools</h2>
+          <div class="skills-imgs">
+                <img src="assets/images/skills/python.png" alt="React" class="skills-img" loading="lazy" title="React">
+                <img src="assets/images/skills/linux.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
+                 <img src="assets/images/skills/kali.png" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
+                 <img src="assets/images/skills/apache.png" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
+                 <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+                 <img src="assets/images/skills/sql.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+                 <img src="assets/images/skills/meta.png" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
+                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                 <img src="assets/images/skills/NETWORKING.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/windows.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/github.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/docker.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/able.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/k8s.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/vs.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/autopsy-logo.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+            </figure>
+          </div>
+        </div>  
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                As a B.Sc. Computer Science student with a strong interest in IT and Data Science. I'm eager to collaborate, network, and explore opportunities in these fields. Let's connect and embark on this journey together!     </p>
+              <p class="contact-text">
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+              src="assets/images/sk.png"
+               alt="Syed Mohsin"
+              class="signatures"
+               loading="lazy"
+              style="width: 300px; height: auto; position: relative; left: 50px; top: 20px;"
+           />
+            </div>
+            <form name="contact" method="POST" class="contact-form" data-netlify="true">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/M-Aadhi" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/i-will-take-u-2-my-dp" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              
+              
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Vimal D</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
